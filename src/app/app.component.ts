@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Seleccion } from './modex/seleccion.model';
 
 @Component({
   selector: 'app-root',
@@ -91,8 +92,64 @@ export class AppComponent {
       alimentacion:"bacterias, hongos",
       habitad:"ambientes húmedos",
       volador:"false"
-    }
-  ]
+    },
+  ];
+
+  
+  Argentina:Seleccion = {
+    name: "Asociación del Fútbol Argentino",
+    contry_name:"Argentina",
+    Alternative_names: ["La Albiceleste","Los Gauchos"],
+    colors:["Azul","Blanco"],
+    won_titles:["Mundial 2022","copa america 2020"],
+    capitain_name:"Lionel Messi",
+    coach_name:"Lionel Scaloni",
+    logo:"https://img.planetafobal.com/2022/12/afa-logos-tres-estrellas-mundiales-qa.jpg",
+    abbreviation:"AFC",
+    top_scorer:{
+      nombre:"Leo Messi",
+      goles: 102
+    },
+    estadio:{
+      name:"El estadio de River",
+      nickname:"Mâs Monumenta",
+      location:"Buenos Aires",
+      capacity:83.214,
+    },
+    players:[
+      {
+        name:"Lionel Andrés",
+        lastname:"Messi Cuccittin",
+        age:"35 años",
+        height:"1,7 m",
+        place_of_birth:"Rosario, Argentina",
+        position:"delantero",
+        current_club:"París Saint-Germain Football Club",
+        shirt_number:10,
+      },
+      {
+        name:"Damián Emiliano",
+        lastname:"Martínez",
+        age:"30 años",
+        height:"1,95 m",
+        place_of_birth:"Mar del Plata, Argentina",
+        position:"arquero",
+        current_club:"Aston Villa Football Club",
+        shirt_number:23,
+      },
+      {
+        name:"Enzo Jeremías",
+        lastname:"Fernández",
+        age:"22 años",
+        height:"1,78 m",
+        place_of_birth:"San Martín, Argentina",
+        position:"centrocampista",
+        current_club:"Chelsea Football Club",
+        shirt_number:24,
+      }
+    ]
+  }
+
 
 
 
