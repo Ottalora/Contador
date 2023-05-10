@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Seleccion } from './modex/seleccion.model';
+import { Cantante } from './modex/cantante.model';
 
 @Component({
   selector: 'app-root',
@@ -176,6 +177,8 @@ export class AppComponent {
       return false;
     }
   }
+
+
   
   
 }
