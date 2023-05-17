@@ -8,6 +8,11 @@ import { Cantante } from 'src/app/modex/cantante.model';
 })
 export class CantantesComponent implements OnInit {
   
+  inputNombre:string="";
+  inputEdad:number=0;
+  inputVivo:boolean=false;
+
+  
   cantantes:Cantante[] = [
     {
       nombre:"Roberto Musso",
@@ -95,6 +100,25 @@ export class CantantesComponent implements OnInit {
     console.log(sumas) 
     console.log(raizes) 
     console.log(potencia)
+  }
+  agregarCantante(){
+    console.log("funcion click");
+    let nuevoCantante:Cantante={
+      nombre:this.inputNombre,
+      edad:this.inputEdad,
+      vivo:this.inputVivo,
+    
+    }
+    this.cantantes.push(nuevoCantante);
+    this.reset();
+  }
+ 
+  
+  reset(){
+    this.inputNombre="";
+    this.inputEdad=0;
+    this.inputVivo=false;
+
   }
 
 }

@@ -18,3 +18,9 @@
     width: 100%;
     border-radius: 25px 25px 0 0;
 }
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
